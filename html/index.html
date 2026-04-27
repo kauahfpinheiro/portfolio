@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kauã Pinheiro | Dev Full Stack</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="../css/portfolio-style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">KP<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-badge">// DEV FULL STACK</div>
+          <h1 class="hero-name">KAUÃ<br><span class="accent">PINHEIRO</span></h1>
+          <p class="hero-role">
+            <span id="typedText"></span><span class="typing-cursor"></span>
+          </p>
+          <p class="hero-desc">
+            Estudante de TI e desenvolvedor full stack com formação técnica em informática.
+            Desenvolvo aplicações web focadas em organização de código, boas práticas e evolução técnica contínua.
+          </p>
+          <div class="hero-btns">
+            <a href="#projetos" class="btn-neon">Ver Projetos</a>
+            <a href="#contato" class="btn-ghost">Entrar em Contato</a>
+            <a href="mapa-mental.html" class="btn-ghost" style="border-color:rgba(0,207,255,0.3);">
+              <i class="fa-solid fa-brain" style="margin-right:6px;color:var(--blue-neon);"></i>Sobre Mim
+            </a>
+            <a href="https://padlet.com/kauahfpinheiro/apresentacao-pessoal-e-profissional-kaua-pinheiro-hn6cfagepgclh9oz" target="_blank" class="btn-ghost" style="border-color:rgba(0,207,255,0.3);">
+              <i class="fa-solid fa-rectangle-list" style="margin-right:6px;color:var(--blue-neon);"></i>Padlet
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">Full</div>
+              <div class="stat-label">Stack</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Tecnologias</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">Web</div>
+              <div class="stat-label">Focused</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0">
+          <div class="hero-avatar-wrap">
+            <div class="avatar-hex">
+              <svg class="hex-bg" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="140,10 260,75 260,205 140,270 20,205 20,75"
+                  stroke="rgba(0,207,255,0.25)" stroke-width="1.5" fill="none"
+                  stroke-dasharray="8 4"/>
+                <polygon points="140,30 245,88 245,192 140,250 35,192 35,88"
+                  stroke="rgba(0,119,255,0.12)" stroke-width="1" fill="none"/>
+              </svg>
+              <div class="avatar-inner">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="avatar-ring avatar-ring-1"></div>
+              <div class="avatar-ring avatar-ring-2"></div>
+              <div class="avatar-ring avatar-ring-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 01 — sobre mim</p>
+        <h2 class="section-title">Quem <span class="accent">sou eu</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-7 reveal">
+          <div class="sobre-card">
+            <p class="sobre-text">
+              Sou <span class="sobre-highlight">Kauã Pinheiro</span>, estudante de TI e desenvolvedor
+              full stack em formação. Atuo no desenvolvimento de aplicações web com envolvimento em
+              <span class="sobre-highlight">front-end, back-end e banco de dados</span>, trabalhando de
+              forma colaborativa em equipe com demandas reais.
+            </p>
+            <p class="sobre-text mt-3">
+              Tenho perfil orientado ao <span class="sobre-highlight">aprendizado contínuo</span>,
+              buscando evolução técnica e aplicação de boas práticas. Sou proativo para resolver
+              problemas, apoiar o time e contribuir para a manutenção e evolução dos sistemas.
+              Comprometido com organização, clareza e qualidade de código.
+            </p>
+            <p class="sobre-text mt-3">
+              Estou aberto à incorporação de novas tecnologias e à colaboração em projetos desafiadores
+              que me permitam crescer como desenvolvedor.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 reveal">
+          <div class="sobre-card h-100">
+            <p class="section-label mb-3">// Informações</p>
+            <div class="info-grid">
+              <div class="info-item"><i class="fa-solid fa-graduation-cap"></i> Técnico em Informática</div>
+              <div class="info-item"><i class="fa-solid fa-layer-group"></i> Full Stack Dev</div>
+              <div class="info-item"><i class="fa-solid fa-users"></i> Trabalho em equipe</div>
+              <div class="info-item"><i class="fa-solid fa-database"></i> MySQL / MariaDB</div>
+              <div class="info-item"><i class="fa-brands fa-git-alt"></i> Git / DevOps</div>
+              <div class="info-item"><i class="fa-solid fa-rocket"></i> Em evolução contínua</div>
+            </div>
+            <div class="mt-3 pt-3" style="border-top: 1px solid rgba(0,207,255,0.08);">
+              <div class="d-flex gap-3 mt-3">
+                <a href="https://github.com/kauahfpinheiro" target="_blank" class="btn-project">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/kauapinheiro/" target="_blank" class="btn-project">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 02 — habilidades</p>
+        <h2 class="section-title">Stack <span class="accent">Técnica</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-grid reveal">
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-palette"></i></div>
+            <span class="skill-cat-title">Front-End</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-server"></i></div>
+            <span class="skill-cat-title">Back-End</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-database"></i></div>
+            <span class="skill-cat-title">Banco de Dados</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-gears"></i></div>
+            <span class="skill-cat-title">DevOps & Workflow</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Slack</span>
+            <span class="skill-tag">Kanban</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 03 — projetos</p>
+        <h2 class="section-title">Trabalhos <span class="accent">Recentes</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-7 reveal">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon"><i class="fa-solid fa-store"></i></div>
+              <div class="project-type">// Projeto Institucional</div>
+              <h3 class="project-title">aMEI — Acelera MEI</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">
+                Plataforma digital desenvolvida para aproximar <strong style="color:#c8e6ff;">Cidadãos, MEIs, Empresas e a Prefeitura</strong>
+                em um único ambiente. O projeto surgiu para solucionar a falta de uma ferramenta eficiente
+                de comunicação e integração na comunidade. Inspirado em iniciativas como GO Recife e Contrata+ Brasil,
+                o aMEI promove gestão pública mais ágil, transparente e acessível.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Full Stack</span>
+                <span class="project-tag">Web App</span>
+                <span class="project-tag">Gestão Pública</span>
+                <span class="project-tag">MEI</span>
+                <span class="project-tag">Acadêmico</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://sites.google.com/view/projeto-acelera-mei" target="_blank" class="btn-project">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Projeto
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">// 04 — contato</p>
+        <h2 class="section-title">Vamos <span class="accent">Conversar</span></h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-5 reveal">
+          <div class="contact-wrapper h-100">
+            <p class="section-label mb-2">// Links</p>
+            <p style="color:var(--text-dim); font-size:0.95rem; font-weight:300;">
+              Estou aberto a colaborações, projetos e oportunidades. Entre em contato por qualquer um dos canais abaixo.
+            </p>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/kauapinheiro/" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                <span>/in/kauapinheiro</span>
+              </a>
+              <a href="https://github.com/kauahfpinheiro" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i>
+                <span>github.com/kauahfpinheiro</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 reveal">
+          <div class="contact-wrapper">
+            <p class="section-label mb-3">// Mensagem Direta</p>
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Seu nome completo"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="seu@email.com"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" placeholder="Olá Kauã, gostaria de..."></textarea>
+            </div>
+            <button class="btn-neon w-100" id="sendBtn" style="border-radius:2px; font-size:0.82rem; padding:13px;">
+              ENVIAR MENSAGEM
+            </button>
+            <div id="formFeedback" style="display:none; margin-top:1rem; font-family:'Share Tech Mono',monospace; font-size:0.8rem; color:var(--blue-neon); text-align:center;">
+              ✓ Mensagem enviada com sucesso!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="footer-text">
+        &copy; 2026 <a href="#">Kauã Pinheiro</a> — Desenvolvido com HTML, CSS, JS &amp; Bootstrap
+      </p>
+      <p class="footer-text mt-1" style="font-size:0.68rem; opacity:0.4;">
+        // FULL STACK DEVELOPER // SEMPRE APRENDENDO //
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/portfolio-script.js"></script>
+</body>
+</html>
