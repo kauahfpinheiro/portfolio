@@ -43,10 +43,52 @@ const obs = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 reveals.forEach(r => obs.observe(r));
 
-// FORM FEEDBACK (demo)
-document.getElementById('sendBtn').addEventListener('click', () => {
-  document.getElementById('formFeedback').style.display = 'block';
-  setTimeout(() => { document.getElementById('formFeedback').style.display = 'none'; }, 3000);
+// FORM FEEDBACK - OPEN GMAIL COMPOSE WINDOW
+document.getElementById('sendBtn').addEventListener('click', function() {
+  try {
+    // Get form values
+    const form = document.getElementById('contactForm');
+    const name = form.querySelector('input[name="nome"]').value.trim();
+    const email = form.querySelector('input[name="email"]').value.trim();
+    const message = form.querySelector('textarea[name="mensagem"]').value.trim();
+    
+    // Validation
+    if (!name) {
+      alert('Por favor, preencha o campo Nome.');
+      return false;
+    }
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Por favor, insira um e-mail válido.');
+      return false;
+    }
+    if (!message) {
+      alert('Por favor, preencha o campo Mensagem.');
+      return false;
+    }
+    
+    // Abre o Gmail Compose com os campos preenchidos para o usuário confirmar e enviar
+    const subject = `Mensagem de ${name}`;
+    const body = `${message}\n\n---\nNome: ${name}\nEmail: ${email}`;
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=kauahfpinheiro@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Show success feedback
+    document.getElementById('formFeedback').style.display = 'block';
+    document.getElementById('formFeedback').textContent = '✓ Abrindo o Gmail para você confirmar o envio...';
+    
+    // Open Gmail window after a brief delay
+    setTimeout(() => {
+      window.open(gmailUrl, '_blank');
+    }, 500);
+    
+    // Hide feedback after delay
+    setTimeout(() => { document.getElementById('formFeedback').style.display = 'none'; }, 4000);
+    
+    return false;
+  } catch (err) {
+    console.error('Erro ao enviar mensagem:', err);
+    alert('Erro ao processar formulário. Por favor, tente novamente.');
+    return false;
+  }
 });
 
 // NAVBAR ACTIVE ON SCROLL

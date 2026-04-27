@@ -285,24 +285,26 @@
         <div class="col-lg-7 reveal">
           <div class="contact-wrapper">
             <p class="section-label mb-3">// Mensagem Direta</p>
-            <div class="mb-3">
-              <label class="form-label">Nome</label>
-              <input type="text" class="form-control" placeholder="Seu nome completo"/>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">E-mail</label>
-              <input type="email" class="form-control" placeholder="seu@email.com"/>
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Mensagem</label>
-              <textarea class="form-control" placeholder="Olá Kauã, gostaria de..."></textarea>
-            </div>
-            <button class="btn-neon w-100" id="sendBtn" style="border-radius:2px; font-size:0.82rem; padding:13px;">
-              ENVIAR MENSAGEM
-            </button>
-            <div id="formFeedback" style="display:none; margin-top:1rem; font-family:'Share Tech Mono',monospace; font-size:0.8rem; color:var(--blue-neon); text-align:center;">
-              ✓ Mensagem enviada com sucesso!
-            </div>
+            <form id="contactForm">
+              <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" placeholder="Seu nome completo"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">E-mail</label>
+                <input type="email" name="email" class="form-control" placeholder="seu@email.com"/>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Mensagem</label>
+                <textarea name="mensagem" class="form-control" placeholder="Olá Kauã, gostaria de..."></textarea>
+              </div>
+              <button type="button" class="btn-neon w-100" id="sendBtn" style="border-radius:2px; font-size:0.82rem; padding:13px;">
+                ENVIAR MENSAGEM
+              </button>
+              <div id="formFeedback" style="display:none; margin-top:1rem; font-family:'Share Tech Mono',monospace; font-size:0.8rem; color:var(--blue-neon); text-align:center;">
+                ✓ Mensagem enviada com sucesso!
+              </div>
+            </form>
           </div>
         </div>
       </div>
